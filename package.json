@@ -1,14 +1,14 @@
 {
-  "homepage": "https://fauz-del.github.io/ZenSip-Landing-Page-",
   "name": "my-website",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://fauz-del.github.io/ZenSip-Landing-Page-",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
     "predeploy": "pnpm run build",
     "deploy": "gh-pages -d dist"
   },
@@ -29,6 +29,7 @@
     "@types/node": "^24.10.1",
     "@types/react": "^19.2.5",
     "@types/react-dom": "^19.2.3",
+    "@types/react-scroll": "^1.8.10",
     "@vitejs/plugin-react": "^5.1.1",
     "autoprefixer": "10.4.23",
     "eslint": "^9.39.1",

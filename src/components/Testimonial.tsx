@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 const TestimonialSection = () => {
     const testimonials = [
@@ -22,7 +22,7 @@ const TestimonialSection = () => {
         },
     ];
 
-    const StarRating = ({ rating }) => (
+    const StarRating = ({ rating }: { rating: number }) => (
         <div className="flex items-center mb-4">
             {[...Array(rating)].map((_, i) => (
                 <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
@@ -46,7 +46,7 @@ const TestimonialSection = () => {
                             <StarRating rating={testimonial.rating} />
                             <p className="text-slate-600 italic mb-6 leading-relaxed">"{testimonial.quote}"</p>
                             <div className="flex items-center">
-                                {/* Placeholder for user avatar */}
+      
                                 <div className="w-10 h-10 bg-gray-400 rounded-full flex items-center justify-center text-white font-semibold text-sm mr-4">
                                     {testimonial.name.charAt(0)}
                                 

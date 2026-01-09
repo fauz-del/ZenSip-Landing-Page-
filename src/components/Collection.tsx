@@ -1,4 +1,3 @@
-import React from 'react';
 import { Leaf, Wind, Sparkles } from "lucide-react";
 import combo2 from '../img/combo2.jpg'; 
 import sliverbottle1 from '../img/sliverbottle1.jpg';
@@ -17,7 +16,6 @@ export default function Collection() {
             <div className="max-w-6xl mx-auto">
                 <div className="grid md:grid-cols-3 gap-16">
                     
-                    {/* Pillar 1 */}
                     <div className="group text-center flex flex-col items-center">
                         <div className="mb-6 p-4 rounded-full bg-white shadow-sm border border-slate-50 group-hover:scale-110 transition-transform duration-300">
                             <Leaf className="w-6 h-6 text-teal-700/70 stroke-[1.5px]" />
@@ -30,7 +28,6 @@ export default function Collection() {
                         </p>
                     </div>
 
-                    {/* Pillar 2 */}
                     <div className="group text-center flex flex-col items-center">
                         <div className="mb-6 p-4 rounded-full bg-white shadow-sm border border-slate-50 group-hover:scale-110 transition-transform duration-300">
                             <Wind className="w-6 h-6 text-teal-700/70 stroke-[1.5px]" />
@@ -43,7 +40,6 @@ export default function Collection() {
                         </p>
                     </div>
 
-                    {/* Pillar 3 */}
                     <div className="group text-center flex flex-col items-center">
                         <div className="mb-6 p-4 rounded-full bg-white shadow-sm border border-slate-50 group-hover:scale-110 transition-transform duration-300">
                             <Sparkles className="w-6 h-6 text-teal-700/70 stroke-[1.5px]" />
@@ -67,7 +63,6 @@ export default function Collection() {
                     {products.map((product) => (
                         <div key={product.id} className="group relative aspect-[3/4] bg-gray-100 overflow-hidden cursor-pointer">
                             
-                            {/* Product Image */}
                             <img 
                                 src={product.img} 
                                 alt={product.name}

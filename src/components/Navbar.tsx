@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { Menu, X } from "lucide-react";
 
@@ -29,12 +29,12 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        {/* Logo */}
+  
         <a href="#" className="text-2xl font-black tracking-tighter text-black uppercase italic">
           Zen<span className="text-gray-400">Sip</span>
         </a>
 
-        {/* Desktop Nav */}
+    
         <ul className="hidden md:flex gap-7 items-center">
           {navItems.map(({ link, path }) => (
             <li key={path}>
@@ -46,14 +46,14 @@ const Navbar = () => {
                 className="relative cursor-pointer text-[12px] font-black text-black uppercase tracking-[0.2em] group"
               >
                 {link}
-                {/* FIXED: Underline color set to gray-400 */}
+      
                 <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-gray-400 transition-all duration-300 group-hover:w-full"></span>
               </Link>
             </li>
           ))}
         </ul>
 
-        {/* Desktop Actions */}
+
         <div className="hidden md:flex items-center">
           <a
             href="#shop"
@@ -63,7 +63,6 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* Mobile menu button */}
         <button
           className="md:hidden p-1 text-black z-50"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -72,7 +71,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile menu */}
       {isMenuOpen && (
         <div className="md:hidden fixed inset-0 bg-white z-[40] flex flex-col px-8 py-24 animate-in slide-in-from-right duration-300">
           <ul className="flex flex-col gap-3">
@@ -83,7 +81,7 @@ const Navbar = () => {
                   smooth={true}
                   spy={true}
                   offset={-100}
-                  /* FIXED: text-2xl for normal sizing (5xl was too large) */
+      
                   className="block text-1xl font-black text-black group-hover:text-amber-900 uppercase italic tracking-tighter active:text-gray-400"
                   onClick={() => setIsMenuOpen(false)}
                 >

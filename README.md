@@ -1,73 +1,70 @@
-# React + TypeScript + Vite
+# 🍃 ZenSip — The Ritual of Modern Living
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Live Demo](img.shields.io)](fauz-del.github.io)
+[![GitHub Stars](img.shields.io)](github.com)
 
-Currently, two official plugins are available:
+> **"Pure Elegance. No noise. No clutter. Just the essence of the pour."**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ZenSip is a high-fashion, editorial-inspired landing page designed for a premium beverage brand. Moving away from traditional web layouts, this project explores **Asymmetric Design**, **Fluid Typography**, and **Cinematic Motion** for a luxurious 2026 digital experience.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🍃 The Product: Elevating the Pause
 
-## Expanding the ESLint configuration
+ZenSip is more than a beverage; it is a curated sanctuary for the intentional. Our 2026 collection is built on the philosophy of **Quiet Luxury**:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+*   **The Ritual Blend:** Ethically sourced, premium botanicals designed to calm the mind and sharpen the focus.
+*   **The Minimalist Kit:** Handcrafted tools and ceramic accessories designed to make the act of pouring an art form.
+*   **Sustainably Crafted:** Every element is packaged in zero-waste materials, ensuring your "moment of zen" respects the Earth.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ✨ Design Philosophy
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Unlike typical e-commerce sites, ZenSip focuses on the *ritual*. The UI utilizes:
+- **Editorial Layouts:** Large-scale, staggered typography that breaks the standard grid.
+- **Cinematic Motion:** Powered by **Framer Motion** for buttery-smooth entries and parallax effects.
+- **Minimalist Palette:** A sophisticated mix of **Zen-Ivory**, **Charcoal**, and **Deep Ochre**.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Key Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Floating Dock Navigation:** A modern, glassmorphism-based navbar that slides smoothly to sections.
+- **Fluid Scrolling:** Integrated `react-scroll` for seamless, weighted transitions across the page.
+- **Asymmetric Collection Gallery:** A "scrapbook" style grid with immersive hover interactions.
+- **Interactive Hero Section:** High-impact entrance animations with staggered text reveals.
+- **Responsive Mobile Experience:** A unique, thumb-friendly mobile menu designed for modern devices.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠️ Tech Stack
+
+- **Framework:** [React.js](reactjs.org)
+- **Styling:** [Tailwind CSS](tailwindcss.com)
+- **Animation:** [Framer Motion](www.framer.com)
+- **Icons:** [Lucide React](lucide.dev)
+- **Deployment:** [GitHub Pages](pages.github.com)
+
+---
+
+## 🛠️ Installation & Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone github.com
+
+2. Install dependencies:
+   ```bash
+   npm install
+   Use code with caution.
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   Use code with caution.
+
+🔗 Project Links
+Live Demo: Visit ZenSip Website
+Source Code: GitHub Repository
+🏷️ Tags
+#react #tailwindcss #framer-motion #high-fashion-web #minimalist-ui #frontend-development #editorial-design #web-design-2026
+Developed with ☕ by fauz-del
+{content: }
+   

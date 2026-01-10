@@ -1,100 +1,122 @@
-import React from 'react';
+import { motion } from "framer-motion";
 import { Leaf, Wind, Sparkles } from "lucide-react";
 import combo2 from '../img/combo2.jpg'; 
 import sliverbottle1 from '../img/sliverbottle1.jpg';
 import glassbottle from '../img/glassbottle.jpg'; 
 
 const products = [
-    { id: 1, name: "Pro Bottles 1L", price: "$45", img: combo2 },
-    { id: 2, name: "Glass Core 1L", price: "$35", img: glassbottle },
-    { id: 3, name: "Active Flask", price: "$28", img: sliverbottle1 },
+    { 
+        id: 1, 
+        name: "Pro Bottles 1L", 
+        price: "$45", 
+        img: combo2, 
+        size: "md:col-span-2 md:row-span-2" // Large Hero Product
+    },
+    { 
+        id: 2, 
+        name: "Glass Core 1L", 
+        price: "$35", 
+        img: glassbottle, 
+        size: "md:col-span-1 md:row-span-1" 
+    },
+    { 
+        id: 3, 
+        name: "Active Flask", 
+        price: "$28", 
+        img: sliverbottle1, 
+        size: "md:col-span-1 md:row-span-1" 
+    },
 ];
 
 export default function Collection() {
     return (
-      <>
-        <section className="bg-[#FAF9F6] py-20 my-10 px-5 border-y border-slate-100">
-            <div className="max-w-6xl mx-auto">
-                <div className="grid md:grid-cols-3 gap-16">
-                    
-                    {/* Pillar 1 */}
-                    <div className="group text-center flex flex-col items-center">
-                        <div className="mb-6 p-4 rounded-full bg-white shadow-sm border border-slate-50 group-hover:scale-110 transition-transform duration-300">
-                            <Leaf className="w-6 h-6 text-teal-700/70 stroke-[1.5px]" />
-                        </div>
-                        <h3 className="text-sm uppercase tracking-[0.2em] font-semibold text-slate-800 mb-4">
-                            Sustainable Soul
-                        </h3>
-                        <p className="text-slate-500 text-sm leading-relaxed font-light max-w-[280px]">
-                            A lifetime companion crafted to eliminate single-use plastic from your daily ritual.
-                        </p>
-                    </div>
-
-                    {/* Pillar 2 */}
-                    <div className="group text-center flex flex-col items-center">
-                        <div className="mb-6 p-4 rounded-full bg-white shadow-sm border border-slate-50 group-hover:scale-110 transition-transform duration-300">
-                            <Wind className="w-6 h-6 text-teal-700/70 stroke-[1.5px]" />
-                        </div>
-                        <h3 className="text-sm uppercase tracking-[0.2em] font-semibold text-slate-800 mb-4">
-                            Mindful Design
-                        </h3>
-                        <p className="text-slate-500 text-sm leading-relaxed font-light max-w-[280px]">
-                            Ergonomic curves and high-tension borosilicate glass designed for sensory clarity.
-                        </p>
-                    </div>
-
-                    {/* Pillar 3 */}
-                    <div className="group text-center flex flex-col items-center">
-                        <div className="mb-6 p-4 rounded-full bg-white shadow-sm border border-slate-50 group-hover:scale-110 transition-transform duration-300">
-                            <Sparkles className="w-6 h-6 text-teal-700/70 stroke-[1.5px]" />
-                        </div>
-                        <h3 className="text-sm uppercase tracking-[0.2em] font-semibold text-slate-800 mb-4">
-                            Absolute Purity
-                        </h3>
-                        <p className="text-slate-500 text-sm leading-relaxed font-light max-w-[280px]">
-                            Non-porous materials ensure your water remains chemically pure and untainted.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
+      <section id="collection" className="bg-white py-24 px-6 overflow-hidden">
         
-        <section className="py-10 bg-white">
-            <div className="max-w-7xl mx-auto px-6">
-              <h2 className= "text-[20px] uppercase tracking-[0.1em] font-bold text-slate-800 mb-4"> Collection </h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    {products.map((product) => (
-                        <div key={product.id} className="group relative aspect-[3/4] bg-gray-100 overflow-hidden cursor-pointer">
-                            
-                            {/* Product Image */}
-                            <img 
-                                src={product.img} 
-                                alt={product.name}
-                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                            />
-
-                            <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                                <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                    <h3 className="text-white text-lg font-bold uppercase tracking-tighter italic">
-                                        {product.name}
-                                    </h3>
-                                    <div className="flex justify-between items-center mt-2">
-                                        <span className="text-white/80 text-sm font-medium">{product.price}</span>
-                                        <span className="text-white text-[10px] border border-white/40 px-2 py-1 uppercase tracking-widest">
-                                            Add to Cart
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            
+        {/* PHILOSOPHY SECTION */}
+        <div className="max-w-7xl mx-auto mb-32">
+            <div className="grid md:grid-cols-3 border-t border-gray-100">
+                {[
+                    { icon: <Leaf className="w-5 h-5"/>, title: "Sustainable", desc: "Crafted to eliminate single-use plastic." },
+                    { icon: <Wind className="w-5 h-5"/>, title: "Ergonomic", desc: "Curves designed for sensory clarity." },
+                    { icon: <Sparkles className="w-5 h-5"/>, title: "Purity", desc: "Non-porous borosilicate glass." }
+                ].map((feature, i) => (
+                    <motion.div 
+                        key={i}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ delay: i * 0.2 }}
+                        className="p-10 border-b md:border-b-0 md:border-r border-gray-100 last:border-r-0 group"
+                    >
+                        <div className="text-[#1A1A1A] mb-6 group-hover:scale-110 transition-transform duration-500">
+                            {feature.icon}
                         </div>
-                    ))}
-                </div>
-      
-                
+                        <h3 className="text-[10px] uppercase tracking-[0.4em] font-black text-[#1A1A1A] mb-4">
+                            {feature.title}
+                        </h3>
+                        <p className="text-gray-500 text-sm font-light leading-relaxed">
+                            {feature.desc}
+                        </p>
+                    </motion.div>
+                ))}
             </div>
-        </section>
-    </>
+        </div>
+        
+        {/* GALLERY GRID */}
+        <div className="max-w-7xl mx-auto">
+            <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+                <motion.h2 
+                    initial={{ opacity: 0, x: -30 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    className="text-6xl md:text-8xl font-black uppercase italic tracking-tighter text-[#1A1A1A]"
+                >
+                    The <br /> <span className="text-gray-300 italic">Drop.</span>
+                </motion.h2>
+                <p className="text-gray-400 text-[10px] uppercase tracking-[0.3em] font-bold pb-4">
+                    Spring/Summer 2026 Collection
+                </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px] md:auto-rows-[400px]">
+                {products.map((product, i) => (
+                    <motion.div 
+                        key={product.id}
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.8, delay: i * 0.1 }}
+                        className={`group relative overflow-hidden bg-[#FAF9F6] ${product.size}`}
+                    >
+                        {/* Image Logic */}
+                        <img 
+                            src={product.img} 
+                            alt={product.name}
+                            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-105"
+                        />
+
+                        {/* Hover Overlay */}
+                        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                            <motion.div className="translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                                <h3 className="text-white text-3xl font-black uppercase italic tracking-tighter mb-2">
+                                    {product.name}
+                                </h3>
+                                <div className="flex justify-between items-center">
+                                    <span className="text-white/70 text-sm font-light tracking-widest">{product.price}</span>
+                                    <button className="bg-white text-[#1A1A1A] px-6 py-2 text-[9px] font-black uppercase tracking-widest hover:bg-gray-200 transition-colors">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </motion.div>
+                        </div>
+
+                        {/* Top Right Label (Always Visible) */}
+                        <div className="absolute top-6 right-6 z-20">
+                           <span className="text-[9px] font-black uppercase tracking-widest text-[#1A1A1A] bg-white px-3 py-1 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                                Limited
+                           </span>
+                        </div>
+                    </motion.div>
+                ))}
+            </div>
+        </div>
+      </section>
     );
 }

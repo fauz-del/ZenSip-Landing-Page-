@@ -4,5 +4,5 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/ZenSip-Landing-Page-/", // for GitHub Pages deployment
+  base: "/ZenSip-Landing-Page-/",
 });

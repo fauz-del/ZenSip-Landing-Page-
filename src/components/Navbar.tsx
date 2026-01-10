@@ -22,20 +22,20 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-8 w-full z-[100] px-6 flex justify-center">
+    <nav className="fixed top-8 w-full z-[100] px-5 flex justify-center">
       <motion.div 
         layout
-        className={`flex items-center justify-between w-full max-w-5xl px-8 py-4 rounded-full transition-all duration-500 border ${
+        className={ `flex items-center justify-between w-full max-w-5xl px-8 py-2 rounded-full transition-all duration-500 border ${
           isSticky 
             ? "bg-[#1A1A1A] border-white/10 shadow-2xl" 
             : "bg-white/40 backdrop-blur-md border-[#1A1A1A]/10"
         }`}
       >
-        {/* Logo - Color flips based on state */}
+  
         <Link to="hero" smooth={true} className={`text-xl font-black tracking-tighter cursor-pointer italic transition-colors duration-500 ${
             isSticky ? "text-white" : "text-[#1A1A1A]"
         }`}>
-          ZEN<span className={isSticky ? "text-gray-400" : "text-gray-500"}>SIP</span>
+          ZEN<span className={isSticky ? "text-gray-500" : "text-gray-400"}>SIP</span>
         </Link>
         
         {/* Desktop Navigation */}

@@ -33,13 +33,13 @@ const Footer = () => {
                         
                         <div className="flex gap-8 items-center">
                             <a href="#" className="group flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.3em] text-[#1A1A1A]">
-                                Instagram <ArrowUpRight size={14} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                                <Instagram size= {20} /> <ArrowUpRight size={14} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                            </a> 
+                            <a href="#" className="group flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.3em] text-[#1A1A1A]">
+                                <Twitter size= {20} /> <ArrowUpRight size={14} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                             </a>
                             <a href="#" className="group flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.3em] text-[#1A1A1A]">
-                                Twitter <ArrowUpRight size={14} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                            </a>
-                            <a href="#" className="group flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.3em] text-[#1A1A1A]">
-                                Facebook <ArrowUpRight size={14} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                                <Facebook size= {20} /> <ArrowUpRight size={14} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                             </a>
                         </div>
                     </div>

@@ -36,7 +36,7 @@ export default function Hero() {
                                 smooth={true} 
                                 duration={1000}
                                 offset={-50}
-                                className="bg-[#1A1A1A] text-white px-10 py-4 font-[#fff] uppercase text-[10px] tracking-[0.2em] hover:bg-gray-800 transition-all cursor-pointer shadow-xl"
+                                className="bg-[#1A1A1A] !text-white px-10 py-4 uppercase text-[10px] tracking-[0.2em] hover:bg-gray-800 transition-all cursor-pointer shadow-xl"
                             >
                                 Explore Collection
                             </Link>

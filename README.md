@@ -1,70 +1,26 @@
-# 🍃 ZenSip — The Ritual of Modern Living
+# ZenSip — Premium Beverage Landing Page
 
-[![Live Demo](img.shields.io)](fauz-del.github.io)
-[![GitHub Stars](img.shields.io)](github.com)
+A high-end, animated landing page for a premium beverage brand. Built with React, TypeScript, Tailwind CSS, and Framer Motion.
 
-> **"Pure Elegance. No noise. No clutter. Just the essence of the pour."**
+🔗 [Live Demo](https://fauz-del.github.io/ZenSip-Landing-Page-)
 
-ZenSip is a high-fashion, editorial-inspired landing page designed for a premium beverage brand. Moving away from traditional web layouts, this project explores **Asymmetric Design**, **Fluid Typography**, and **Cinematic Motion** for a luxurious 2026 digital experience.
+## Features
+- Smooth scroll animations with Framer Motion
+- Asymmetric editorial layout
+- Fully responsive — mobile first
+- Custom floating navigation
 
----
+## Tech Stack
+- React + TypeScript
+- Tailwind CSS
+- Framer Motion
+- Vite
 
-## 🍃 The Product: Elevating the Pause
+## Run locally
+git clone https://github.com/fauz-del/zensip-landing-page.git
+cd zensip-landing-page
+npm install
+npm run dev
 
-ZenSip is more than a beverage; it is a curated sanctuary for the intentional. Our 2026 collection is built on the philosophy of **Quiet Luxury**:
-
-*   **The Ritual Blend:** Ethically sourced, premium botanicals designed to calm the mind and sharpen the focus.
-*   **The Minimalist Kit:** Handcrafted tools and ceramic accessories designed to make the act of pouring an art form.
-*   **Sustainably Crafted:** Every element is packaged in zero-waste materials, ensuring your "moment of zen" respects the Earth.
-
----
-
-## ✨ Design Philosophy
-
-Unlike typical e-commerce sites, ZenSip focuses on the *ritual*. The UI utilizes:
-- **Editorial Layouts:** Large-scale, staggered typography that breaks the standard grid.
-- **Cinematic Motion:** Powered by **Framer Motion** for buttery-smooth entries and parallax effects.
-- **Minimalist Palette:** A sophisticated mix of **Zen-Ivory**, **Charcoal**, and **Deep Ochre**.
-
-## 🚀 Key Features
-
-- **Floating Dock Navigation:** A modern, glassmorphism-based navbar that slides smoothly to sections.
-- **Fluid Scrolling:** Integrated `react-scroll` for seamless, weighted transitions across the page.
-- **Asymmetric Collection Gallery:** A "scrapbook" style grid with immersive hover interactions.
-- **Interactive Hero Section:** High-impact entrance animations with staggered text reveals.
-- **Responsive Mobile Experience:** A unique, thumb-friendly mobile menu designed for modern devices.
-
-## 🛠️ Tech Stack
-
-- **Framework:** [React.js](reactjs.org)
-- **Styling:** [Tailwind CSS](tailwindcss.com)
-- **Animation:** [Framer Motion](www.framer.com)
-- **Icons:** [Lucide React](lucide.dev)
-- **Deployment:** [GitHub Pages](pages.github.com)
-
----
-
-## 🛠️ Installation & Setup
-
-1. **Clone the repository:**
-   ```bash
-   git clone github.com
-
-2. Install dependencies:
-   ```bash
-   npm install
-   Use code with caution.
-
-3. Start the development server:
-   ```bash
-   npm run dev
-   Use code with caution.
-
-🔗 Project Links
-Live Demo: Visit ZenSip Website
-Source Code: GitHub Repository
-🏷️ Tags
-#react #tailwindcss #framer-motion #high-fashion-web #minimalist-ui #frontend-development #editorial-design #web-design-2026
-Developed with ☕ by fauz-del
-{content: }
-   
+## What I learned
+Building this taught me how to combine Framer Motion with Tailwind for smooth, production-quality animations while keeping the bundle size small.
